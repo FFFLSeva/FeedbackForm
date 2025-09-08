@@ -1,0 +1,114 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #fff8f0;
+  margin: 0;
+  padding: 0;
+}
+
+#contact {
+  padding: 40px;
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  background: #fff4e6;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  max-width: 500px;
+  width: 100%;
+}
+#contact-form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+h2 {
+  text-align: center;
+  color: #c2410c;
+  margin-bottom: 20px;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  padding: 12px;
+  margin: 8px;
+  border: 1px solid #f97316;
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+form button {
+  width: 100%;
+  padding: 12px;
+  background: #ea580c;
+  border: none;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+form button:hover {
+  background: #c2410c;
+}
+
+#success-msg {
+  text-align: center;
+  color: #b45309;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.volunteer {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.volunteer h3 {
+  color: #c2410c;
+}
+
+.volunteer .highlight {
+  color: #ea580c;
+  font-weight: bold;
+}
+
+.volunteer a {
+  color: #c2410c;
+  font-weight: bold;
+  text-decoration: underline;
+}
+.logo {
+  display: block;
+  margin: 0 auto 15px; /* center & spacing */
+  max-width: 120px;   /* smaller size */
+  height: auto;       /* keeps aspect ratio */
+}
+.gallery {
+  margin-top: 20px;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.gallery img {
+  width: 120px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+  opacity: 0;
+  transform: scale(0.9);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.gallery img.show {
+  opacity: 1;
+  transform: scale(1);
+}
