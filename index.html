@@ -1,35 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contact | Food for Life</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <section id="contact">
-    <div class="container">
-      <img src="ffl-logo.png" class="logo" alt="Food for Life Logo" class="logo">
-      <h2>Prasadam Pass</h2>
-
-      <!-- Contact Form -->
-      <form id="contact-form" name="contact-form">
-        <input type="text" name="name" placeholder="Your Name" required>
-        <input type="tel" name="phonenumber" placeholder="Your Phone Number" required>
-        <input type="text" name="dob" placeholder="Your Date of Birth" required>
-        <input type="text" name="address" placeholder="Your Address" required>
-        <textarea name="query" placeholder="Your Query" rows="4" required></textarea>
-        <button type="submit">Send Message</button>
-      </form>
-
-      <!-- Hidden gallery -->
-      <div id="activity-gallery" style="display: none; text-align: center; align-items: center ;margin-top: 20px;">
-        <img src="PitruPaksha.png" alt="Prasadam Pass" style="max-width:400px; display:block; margin:0 auto;">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact | Food for Life</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section id="contact">
+      <div class="container">
+        <img
+          src="ffl-logo.png"
+          class="logo"
+          alt="Food for Life Logo"
+        />
         <h2>Prasadam Pass</h2>
-      </div>
-    </div>
-  </section>
 
-  <script src="script.js"></script>
-</body>
+        <!-- Contact Form -->
+        <form id="contact-form" name="contact-form">
+          <input type="text" name="name" placeholder="Your Name" required />
+          <input
+            type="tel"
+            name="phonenumber"
+            placeholder="Your Phone Number"
+            required
+          />
+          <input
+            type="text"
+            name="dob"
+            placeholder="Your Date of Birth"
+            required
+          />
+          <input
+            type="text"
+            name="address"
+            placeholder="Your Address"
+            required
+          />
+          <textarea
+            name="query"
+            placeholder="Your Query"
+            rows="4"
+            required
+          ></textarea>
+          <button type="submit">Send Message</button>
+        </form>
+
+        <!-- Hidden gallery -->
+        <div
+          id="activity-gallery"
+          style="
+            display: none;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 40px;
+          "
+        >
+          <p style="font-size: 18px; margin-bottom: 10px; color: #333">
+            Visit our site
+          </p>
+          <a
+            href="https://www.foodforlifeseva.com/donate"
+            target="_blank"
+            style="
+              display: inline-block;
+              padding: 10px 20px;
+              margin-bottom: 20px;
+              background-color: #d9534f;
+              color: white;
+              font-size: 18px;
+              text-decoration: none;
+              border-radius: 8px;
+            "
+          >
+            Donate Now
+          </a>
+          <img
+            src="PitruPaksha.png"
+            alt="Prasadam Pass"
+            style="
+              max-width: 400px;
+              width: 100%;
+              height: auto;
+              margin-bottom: 15px;
+            "
+          />
+          <h2 style="text-align: center">Prasadam Pass</h2>
+        </div>
+      </div>
+    </section>
+
+    <script>
+      document.getElementById("contact-form").addEventListener("submit", function (e) {
+        e.preventDefault(); // stop default form submission
+
+        // hide form
+        document.getElementById("contact-form").style.display = "none";
+
+        // show gallery
+        document.getElementById("activity-gallery").style.display = "flex";
+      });
+    </script>
+  </body>
 </html>
