@@ -4,7 +4,7 @@ const gallery = document.getElementById("activity-gallery");
 form.addEventListener("submit", async (e) => {
   e.preventDefault();
 
-  const scriptURL = "https://script.google.com/macros/s/AKfycbyfMX4TtsSUnlbkF46vPdrLi2GZlJCuqqYgiD3nd3UZsruQigIPB9_m9WHrS7OI2o7s/exec";
+  const scriptURL = "https://script.google.com/macros/s/AKfycbxCRfToFluSmGJkVWH8ZOPaIVn1sqceUKqFUHV-UbIeVmLvbxlG7yJ-VM-9dGI4OMSI/exec";
   const formData = new FormData(form);
 
   try {
